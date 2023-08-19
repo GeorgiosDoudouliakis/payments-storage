@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'ps-home',
+  selector: 'ps-hero-section',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './hero-section.component.html',
+  styleUrls: ['./hero-section.component.scss']
 })
-export class HomeComponent {}
+export class HeroSectionComponent {}
