@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     height: 250px;
-    padding: 0 30px;
     @media(min-width: 768px) {
       height: 300px;
     }
@@ -26,8 +25,8 @@
       text-align: center;
       position: absolute;
       top: 0;
-      left: 30px;
-      width: calc(100% - 60px);
+      left: 0;
+      width: 100%;
       height: 100%;
       content: "";
       background: rgba(0, 0, 0, .3);
