@@ -1,0 +1,23 @@
+:host {
+  ul {
+    margin-bottom: 0;
+    border-bottom: none;
+    a {
+      font-weight: 500;
+      &.active {
+        color: #1890ff;
+      }
+    }
+  }
+
+  .mobile-menu-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    span {
+      font-size: 22px;
+    }
+  }
+}
