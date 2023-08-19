@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: "",
+    title: "Αρχική | Payments Storage",
+    loadComponent: () => import("./pages/home/home.component").then(({ HomeComponent }) => HomeComponent)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
