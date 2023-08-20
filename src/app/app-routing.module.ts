@@ -10,12 +10,12 @@ const routes: Routes = [
   {
     path: "login",
     title: "Σύνδεση | Payments Storage",
-    loadComponent: () => import("./pages/auth/components/login/login.component").then(({ LoginComponent }) => LoginComponent)
+    loadComponent: () => import("./pages/auth/layout/login/login.component").then(({ LoginComponent }) => LoginComponent)
   },
   {
     path: "signup",
     title: "Εγγραφή | Payments Storage",
-    loadComponent: () => import("./pages/auth/components/signup/signup.component").then(({ SignupComponent }) => SignupComponent)
+    loadComponent: () => import("./pages/auth/layout/signup/signup.component").then(({ SignupComponent }) => SignupComponent)
   }
 ];
 
