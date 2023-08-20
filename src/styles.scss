@@ -14,3 +14,10 @@ body {
 li {
   list-style-type: none;
 }
+
+// OVERWRITE ANT STYLES
+.ant-card-head-title {
+  overflow: auto !important;
+  white-space: normal !important;
+  text-overflow: unset !important;
+}
