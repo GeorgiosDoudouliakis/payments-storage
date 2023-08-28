@@ -1,14 +1,22 @@
 <h2>{{ pageTitle }}</h2>
-<form nz-form nzLayout="vertical">
+<form nz-form nzLayout="vertical" [formGroup]="authForm">
   <nz-form-item>
-    <nz-form-control>
-      <input nz-input aria-label="email" type="email" placeholder="E-mail">
+    <nz-form-control [nzErrorTip]="emailErrorTpl">
+      <input nz-input formControlName="email" aria-label="email" type="email" placeholder="E-mail" required />
+      <ng-template #emailErrorTpl>
+        <ng-container *ngIf="authForm.get('email')?.hasError('required')">Το πεδίο είναι υποχρεωτικό!</ng-container>
+        <ng-container *ngIf="authForm.get('email')?.hasError('email')">Μη έγκυρο e-mail!</ng-container>
+      </ng-template>
     </nz-form-control>
   </nz-form-item>
   <nz-form-item>
-    <nz-form-control>
+    <nz-form-control [nzErrorTip]="passwordErrorTpl">
       <nz-input-group [nzSuffix]="suffixTemplate">
-        <input nz-input aria-label="password" [type]="isPasswordVisible ? 'text' : 'password'" placeholder="Κωδικός" />
+        <input nz-input  formControlName="password" aria-label="password" [type]="isPasswordVisible ? 'text' : 'password'" placeholder="Κωδικός" required />
+        <ng-template #passwordErrorTpl>
+          <ng-container *ngIf="authForm.get('password')?.hasError('required')">Το πεδίο είναι υποχρεωτικό!</ng-container>
+          <ng-container *ngIf="authForm.get('password')?.hasError('minlength')">Ο κωδικός πρέπει να περιλαμβάνει τουλάχιστον 6 χαρακτήρες!</ng-container>
+        </ng-template>
         <ng-template #suffixTemplate>
           <span nz-icon [nzType]="isPasswordVisible ? 'eye-invisible' : 'eye'" nzTheme="outline" (click)="isPasswordVisible = !isPasswordVisible"></span>
         </ng-template>
@@ -16,6 +24,6 @@
     </nz-form-control>
   </nz-form-item>
 
-  <button nz-button nzType="primary">ΥΠΟΒΟΛΗ</button>
+  <button nz-button nzType="primary" [disabled]="authForm.invalid">ΥΠΟΒΟΛΗ</button>
 </form>
 <ng-container *ngTemplateOutlet="additionalLinksTpl"></ng-container>

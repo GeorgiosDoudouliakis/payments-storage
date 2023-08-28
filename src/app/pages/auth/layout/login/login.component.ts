@@ -9,7 +9,7 @@ import { AuthWrapperComponent } from "../../components/auth-wrapper/auth-wrapper
 /* Place any other imports here */
 import { AbstractAuthDirective } from "../../abstraction/abstract-auth.directive";
 import { AuthPageTitle } from "../../types/auth-page-title.type";
-import {NzButtonModule} from "ng-zorro-antd/button";
+import { NzButtonModule } from "ng-zorro-antd/button";
 
 @Component({
   selector: 'ps-login',
