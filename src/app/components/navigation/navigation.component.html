@@ -1,7 +1,7 @@
 <nav>
   <ul *ngIf="!isOnMobile" nz-menu nzMode="horizontal">
-    <li nz-menu-item><a routerLink="/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
-    <li nz-menu-item><a routerLink="/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
+    <li nz-menu-item><a routerLink="/auth/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
+    <li nz-menu-item><a routerLink="/auth/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
   </ul>
 
   <!-- Mobile Menu -->
@@ -10,8 +10,8 @@
   </div>
   <nz-dropdown-menu #mobileMenu="nzDropdownMenu">
     <ul nz-menu>
-      <li nz-menu-item><a routerLink="/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
-      <li nz-menu-item><a routerLink="/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
+      <li nz-menu-item><a routerLink="/auth/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
+      <li nz-menu-item><a routerLink="/auth/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
     </ul>
   </nz-dropdown-menu>
 </nav>

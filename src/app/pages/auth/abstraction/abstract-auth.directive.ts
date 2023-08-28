@@ -1,9 +1,25 @@
 /* Place your angular imports here */
-import { Directive } from '@angular/core';
+import { Directive, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 @Directive()
-export abstract class AbstractAuthDirective {
+export abstract class AbstractAuthDirective implements OnInit {
+  public authForm!: FormGroup;
+  public isPasswordVisible: boolean = false;
   public abstract pageTitle: string;
 
-  constructor() {}
+  constructor(private _fb: FormBuilder) {}
+
+  public ngOnInit(): void {
+    this._initializeForm();
+  }
+
+  public abstract onSubmit(): void;
+
+  private _initializeForm(): void {
+    this.authForm = this._fb.group({
+      email: this._fb.control<string>("", [Validators.required, Validators.email]),
+      password: this._fb.control<string>("", [Validators.required, Validators.minLength(6)])
+    });
+  }
 }

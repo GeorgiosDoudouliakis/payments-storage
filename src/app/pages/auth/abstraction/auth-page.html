@@ -1,5 +1,5 @@
 <h2>{{ pageTitle }}</h2>
-<form nz-form nzLayout="vertical" [formGroup]="authForm">
+<form nz-form nzLayout="vertical" [formGroup]="authForm" (submit)="onSubmit()">
   <nz-form-item>
     <nz-form-control [nzErrorTip]="emailErrorTpl">
       <input nz-input formControlName="email" aria-label="email" type="email" placeholder="E-mail" required />
@@ -26,4 +26,3 @@
 
   <button nz-button nzType="primary" [disabled]="authForm.invalid">ΥΠΟΒΟΛΗ</button>
 </form>
-<ng-container *ngTemplateOutlet="additionalLinksTpl"></ng-container>
