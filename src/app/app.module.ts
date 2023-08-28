@@ -14,6 +14,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 
 /* Place any other imports here */
 import { NzIconModule } from "ng-zorro-antd/icon";
+import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 import { IconDefinition } from "@ant-design/icons-angular";
 import { MenuOutline, EyeOutline, EyeInvisibleOutline } from "@ant-design/icons-angular/icons";
 
@@ -30,7 +31,8 @@ const icons: IconDefinition[] = [MenuOutline, EyeOutline, EyeInvisibleOutline];
     AppRoutingModule,
     HeaderComponent,
     FooterComponent,
-    NzIconModule.forRoot(icons)
+    NzIconModule.forRoot(icons),
+    NzBackTopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
