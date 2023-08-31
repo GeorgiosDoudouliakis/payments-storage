@@ -2,6 +2,31 @@
   ul {
     margin-bottom: 0;
     border-bottom: none;
+    &.menu {
+      display: flex;
+      a {
+        position: relative;
+        padding: 10px 15px;
+        color: #262626;
+        &:hover {
+          color: #1890ff;
+        }
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          content: "";
+          width: calc(100% - 30px);
+          height: 2px;
+          background: #1890ff;
+          opacity: 0;
+          transition: .4s ease-in-out;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+    }
     a {
       font-weight: 500;
       &.active {
