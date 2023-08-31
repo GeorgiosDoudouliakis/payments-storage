@@ -1,15 +1,4 @@
 <h3>ΠΑΡΕΧΟΜΕΝΕΣ ΥΠΗΡΕΣΙΕΣ</h3>
 <section>
-  <nz-card nzTitle="ΑΠΟΘΗΚΕΥΣΗ ΑΠΟΔΕΙΞΕΩΝ ΛΟΓΑΡΙΑΣΜΩΝ" nzType="inner" [nzHoverable]="true">
-    <p>Αποθηκεύστε τις αποδείξεις σας ώστε να τις έχετε συγκεντρωμένες</p>
-  </nz-card>
-  <nz-card nzTitle="ΑΠΟΘΗΚΕΥΣΗ ΣΥΝΔΕΣΜΩΝ ΤΩΝ ΥΠΗΡΕΣΙΩΝ ΓΙΑ ΗΛΕΚΤΡΟΝΙΚΕΣ ΠΛΗΡΩΜΕΣ" nzType="inner" [nzHoverable]="true">
-    <p>Κρατήστε συγκεντρωμένους τους συνδέσμους των υπηρεσιών που πληρώνετε για μια πιο γρήγορη εύρεση αυτών</p>
-  </nz-card>
-  <nz-card nzTitle="ΕΥΡΕΣΗ ΟΦΕΙΛΟΥΜΕΝΩΝ ΠΛΗΡΩΜΩΝ" nzType="inner" [nzHoverable]="true">
-    <p>Δείτε άμεσα τις οφειλές σας</p>
-  </nz-card>
-  <nz-card nzTitle="ΕΥΡΕΣΗ ΚΟΝΤΙΝΟΤΕΡΩΝ ΚΑΤΑΣΤΗΜΑΤΩΝ" nzType="inner" [nzHoverable]="true">
-    <p>Βρείτε τα πιο κοντινά καταστήματα για πληρωμή δια ζώσης με βάση την τοποθεσία σας</p>
-  </nz-card>
+  <ps-provided-service-item *ngFor="let providedService of providedServices" [providedService]="providedService"></ps-provided-service-item>
 </section>

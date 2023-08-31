@@ -23,8 +23,19 @@ li {
 }
 
 // OVERWRITE ANT STYLES
-.ant-card-head-title {
-  overflow: auto !important;
-  white-space: normal !important;
-  text-overflow: unset !important;
+.provided-service-item-card {
+  display: flex;
+  flex-direction: column;
+  .ant-card-head-title {
+    text-align: center;
+    overflow: auto !important;
+    white-space: normal !important;
+    text-overflow: unset !important;
+  }
+  > .ant-card-actions {
+    margin-top: auto;
+    > li {
+      margin: 0;
+    }
+  }
 }
