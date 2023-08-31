@@ -13,5 +13,5 @@ import { AuthPageTitle } from "../../types/auth-page-title.type";
 export class LoginComponent extends AbstractAuthDirective {
   public pageTitle: AuthPageTitle = "ΣΥΝΔΕΣΗ";
 
-  public onSubmit() {}
+  public submitAction() {}
 }

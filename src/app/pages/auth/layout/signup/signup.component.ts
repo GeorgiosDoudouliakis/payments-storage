@@ -13,5 +13,5 @@ import { AuthPageTitle } from "../../types/auth-page-title.type";
 export class SignupComponent extends AbstractAuthDirective {
   public pageTitle: AuthPageTitle = "ΕΓΓΡΑΦΗ";
 
-  public onSubmit() {}
+  public submitAction() {}
 }

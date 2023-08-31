@@ -14,7 +14,12 @@ export abstract class AbstractAuthDirective implements OnInit {
     this._initializeForm();
   }
 
-  public abstract onSubmit(): void;
+  public abstract submitAction(): void;
+
+  public onSubmit(): void {
+    if(this.authForm.invalid) return;
+    this.submitAction();
+  }
 
   private _initializeForm(): void {
     this.authForm = this._fb.group({
