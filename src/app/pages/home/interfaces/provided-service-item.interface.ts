@@ -1,4 +1,4 @@
-export interface ProvidedServiceItem {
+export interface IProvidedServiceItem {
   title: string;
   description: string;
 }

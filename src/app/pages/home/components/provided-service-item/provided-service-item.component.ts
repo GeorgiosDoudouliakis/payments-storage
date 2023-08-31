@@ -7,7 +7,7 @@ import { NzCardModule } from "ng-zorro-antd/card";
 import { NzButtonModule } from "ng-zorro-antd/button";
 
 /* Place your interface imports here */
-import { ProvidedServiceItem } from "../../interfaces/provided-service-item.interface";
+import { IProvidedServiceItem } from "../../interfaces/provided-service-item.interface";
 
 @Component({
   selector: 'ps-provided-service-item',
@@ -17,5 +17,5 @@ import { ProvidedServiceItem } from "../../interfaces/provided-service-item.inte
   styleUrls: ['./provided-service-item.component.scss']
 })
 export class ProvidedServiceItemComponent {
-  @Input() public providedService: ProvidedServiceItem;
+  @Input() public providedService: IProvidedServiceItem;
 }

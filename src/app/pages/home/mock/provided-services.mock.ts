@@ -1,7 +1,7 @@
 /* Place your interface imports here */
-import { ProvidedServiceItem } from "../interfaces/provided-service-item.interface";
+import { IProvidedServiceItem } from "../interfaces/provided-service-item.interface";
 
-export const PROVIDED_SERVICES: ProvidedServiceItem[] = [
+export const PROVIDED_SERVICES: IProvidedServiceItem[] = [
   {
     title: "ΑΠΟΘΗΚΕΥΣΗ ΑΠΟΔΕΙΞΕΩΝ ΛΟΓΑΡΙΑΣΜΩΝ",
     description: "Αποθηκεύστε τις αποδείξεις σας ώστε να τις έχετε συγκεντρωμένες"

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { ProvidedServiceItemComponent } from "../provided-service-item/provided-service-item.component";
 
 /* Place your interface imports here */
-import { ProvidedServiceItem } from "../../interfaces/provided-service-item.interface";
+import { IProvidedServiceItem } from "../../interfaces/provided-service-item.interface";
 
 /* Place any other imports here */
 import { PROVIDED_SERVICES } from "../../mock/provided-services.mock";
@@ -19,5 +19,5 @@ import { PROVIDED_SERVICES } from "../../mock/provided-services.mock";
   styleUrls: ['./provided-services.component.scss']
 })
 export class ProvidedServicesComponent {
-  public providedServices: ProvidedServiceItem[] = PROVIDED_SERVICES;
+  public providedServices: IProvidedServiceItem[] = PROVIDED_SERVICES;
 }
