@@ -1,6 +1,6 @@
-<nz-card class="provided-service-item-card" [nzTitle]="providedService.title" nzType="inner" [nzActions]="[moreTpl]">
+<nz-card class="provided-service-item-card" [nzTitle]="providedService.title" [nzActions]="[moreTpl]">
   <p>{{ providedService.description }}</p>
 </nz-card>
 <ng-template #moreTpl>
-  <a nz-button nzType="dashed" nzBlock>Δείτε πως</a>
+  <a nz-button nzType="primary" nzBlock>Δείτε πως</a>
 </ng-template>
