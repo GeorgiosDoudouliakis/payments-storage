@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AuthPageWrapperComponent } from './components/auth-page-wrapper/auth-page-wrapper.component';
 import { LoginComponent } from "./layout/login/login.component";
 import { SignupComponent } from "./layout/signup/signup.component";
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 /* Place your module imports here */
 import { AuthRoutingModule } from "./auth-routing.module";
@@ -14,6 +15,7 @@ import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzFormModule } from "ng-zorro-antd/form";
 import { NzInputModule } from "ng-zorro-antd/input";
 import { NzIconModule } from "ng-zorro-antd/icon";
+import { NzModalModule, NzModalService } from "ng-zorro-antd/modal";
 
 @NgModule({
   imports: [
@@ -25,8 +27,10 @@ import { NzIconModule } from "ng-zorro-antd/icon";
     NzFormModule,
     NzInputModule,
     NzIconModule,
-    NzButtonModule
+    NzButtonModule,
+    NzModalModule
   ],
-  declarations: [LoginComponent, SignupComponent, AuthPageWrapperComponent]
+  declarations: [LoginComponent, SignupComponent, AuthPageWrapperComponent, ForgotPasswordComponent],
+  providers: [NzModalService]
 })
 export class AuthModule {}

@@ -10,10 +10,10 @@ export abstract class AbstractAuthDirective {
   public authForm: FormGroup;
   public abstract pageTitle: AuthPageTitle;
 
-  constructor(private _fb: FormBuilder) {
-    this.authForm = this._fb.group({
-      email: this._fb.control<string>("", [Validators.required, Validators.email]),
-      password: this._fb.control<string>("", [Validators.required, Validators.minLength(6)])
+  constructor(public fb: FormBuilder) {
+    this.authForm = this.fb.group({
+      email: this.fb.control<string>("", [Validators.required, Validators.email]),
+      password: this.fb.control<string>("", [Validators.required, Validators.minLength(6)])
     });
   }
 
