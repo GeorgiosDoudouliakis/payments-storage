@@ -3,15 +3,19 @@
     <li><a routerLink="/auth/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
     <li><a routerLink="/auth/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
   </ul>
-
-  <!-- Mobile Menu -->
-  <div *ngIf="isOnMobile" class="mobile-menu-icon-container" nz-dropdown [nzDropdownMenu]="mobileMenu" nzTrigger="click" nzPlacement="bottomRight">
-    <span nz-icon nzType="menu" nzTheme="outline"></span>
-  </div>
-  <nz-dropdown-menu #mobileMenu="nzDropdownMenu">
-    <ul nz-menu>
-      <li nz-menu-item><a routerLink="/auth/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
-      <li nz-menu-item><a routerLink="/auth/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
-    </ul>
-  </nz-dropdown-menu>
 </nav>
+
+<!-- Mobile Menu -->
+<div *ngIf="isOnMobile" class="mobile-menu-icon-container" (click)="openDrawer()">
+  <span nz-icon nzType="menu" nzTheme="outline"></span>
+</div>
+<nz-drawer [nzVisible]="isDrawerVisible" [nzClosable]="false" nzPlacement="left" [nzWidth]="250" (nzOnClose)="closeDrawer()">
+  <ng-container *nzDrawerContent>
+    <nav>
+      <ul>
+        <li><a routerLink="/auth/login" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΣΥΝΔΕΣΗ</a></li>
+        <li><a routerLink="/auth/signup" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΕΓΓΡΑΦΗ</a></li>
+      </ul>
+    </nav>
+  </ng-container>
+</nz-drawer>
