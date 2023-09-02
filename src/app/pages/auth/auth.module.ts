@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 /* Place your component imports here */
+import { AuthPageWrapperComponent } from './components/auth-page-wrapper/auth-page-wrapper.component';
 import { LoginComponent } from "./layout/login/login.component";
 import { SignupComponent } from "./layout/signup/signup.component";
 
@@ -26,6 +27,6 @@ import { NzIconModule } from "ng-zorro-antd/icon";
     NzIconModule,
     NzButtonModule
   ],
-  declarations: [LoginComponent, SignupComponent]
+  declarations: [LoginComponent, SignupComponent, AuthPageWrapperComponent]
 })
 export class AuthModule {}

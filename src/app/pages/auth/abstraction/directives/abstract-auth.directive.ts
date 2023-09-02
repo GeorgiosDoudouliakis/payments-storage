@@ -2,11 +2,13 @@
 import { Directive } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
+/* Place any other imports here */
+import { AuthPageTitle } from "../../types/auth-page-title.type";
+
 @Directive()
 export abstract class AbstractAuthDirective {
   public authForm: FormGroup;
-  public isPasswordVisible: boolean = false;
-  public abstract pageTitle: string;
+  public abstract pageTitle: AuthPageTitle;
 
   constructor(private _fb: FormBuilder) {
     this.authForm = this._fb.group({

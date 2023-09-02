@@ -7,7 +7,7 @@ import { AuthPageTitle } from "../../types/auth-page-title.type";
 
 @Component({
   selector: 'ps-login',
-  templateUrl: '../../abstraction/html/auth-page.html',
+  templateUrl: './login.component.html',
   styleUrls: ['../../abstraction/scss/auth-page.scss']
 })
 export class LoginComponent extends AbstractAuthDirective {

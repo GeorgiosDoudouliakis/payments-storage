@@ -7,7 +7,7 @@ import { AuthPageTitle } from "../../types/auth-page-title.type";
 
 @Component({
   selector: 'ps-signup',
-  templateUrl: '../../abstraction/html/auth-page.html',
+  templateUrl: './signup.component.html',
   styleUrls: ['../../abstraction/scss/auth-page.scss']
 })
 export class SignupComponent extends AbstractAuthDirective {
