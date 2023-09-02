@@ -6,14 +6,14 @@ import { FormGroup } from "@angular/forms";
 import { AuthPageTitle } from "../../types/auth-page-title.type";
 
 @Component({
-  selector: 'ps-auth-page-wrapper[pageTitle][authForm]',
+  selector: 'ps-auth-page-wrapper',
   templateUrl: './auth-page-wrapper.component.html',
   styleUrls: ['./auth-page-wrapper.component.scss']
 })
 export class AuthPageWrapperComponent {
   public isPasswordVisible: boolean = false;
-  @Input() public pageTitle: AuthPageTitle;
-  @Input() public authForm: FormGroup;
+  @Input({ required: true }) public pageTitle: AuthPageTitle;
+  @Input({ required: true }) public authForm: FormGroup;
   @Output() public onSubmitEmitter: EventEmitter<void> = new EventEmitter<void>();
 
   public submitHandler(): void {
