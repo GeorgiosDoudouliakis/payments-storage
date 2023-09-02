@@ -1,6 +1,5 @@
 /* Place your angular imports here */
-import { Component } from '@angular/core';
-import { FormBuilder } from "@angular/forms";
+import { Component, inject } from '@angular/core';
 
 /* Place your component imports here */
 import { ForgotPasswordComponent } from "../../components/forgot-password/forgot-password.component";
@@ -19,10 +18,7 @@ import { AuthPageTitle } from "../../types/auth-page-title.type";
 })
 export class LoginComponent extends AbstractAuthDirective {
   public pageTitle: AuthPageTitle = "ΣΥΝΔΕΣΗ";
-
-  constructor(public override fb: FormBuilder, private _modalService: NzModalService) {
-    super(fb);
-  }
+  private _modalService: NzModalService = inject(NzModalService);
 
   public openModal(): void {
     this._modalService.create({
