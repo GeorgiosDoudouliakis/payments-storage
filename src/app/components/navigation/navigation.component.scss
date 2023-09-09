@@ -8,6 +8,9 @@
       margin-bottom: 0;
       &.menu {
         display: flex;
+        li:not(:last-of-type) {
+          margin-right: 10px;
+        }
         a {
           font-weight: 500;
           position: relative;
