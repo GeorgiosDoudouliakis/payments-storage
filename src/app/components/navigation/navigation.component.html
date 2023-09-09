@@ -1,9 +1,30 @@
-<nav>
-  <ul *ngIf="!isOnMobile" class="menu">
-    <li><a routerLink="/auth/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
-    <li><a routerLink="/auth/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
-  </ul>
-</nav>
+<div class="not-mobile-navigation-container">
+  <nav>
+    <ul *ngIf="!isOnMobile" class="menu">
+      <li><a routerLink="/auth/login" routerLinkActive="active">ΣΥΝΔΕΣΗ</a></li>
+      <li><a routerLink="/auth/signup" routerLinkActive="active">ΕΓΓΡΑΦΗ</a></li>
+
+      <!--  Show if user is logged in   -->
+<!--      <li><a routerLink="/dashboard" routerLinkActive="active">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>-->
+<!--      <li><a routerLink="/services" routerLinkActive="active">ΥΠΗΡΕΣΙΕΣ</a></li>-->
+<!--      <li><a routerLink="/payments" routerLinkActive="active">ΟΦΕΙΛΟΥΜΕΝΕΣ ΠΛΗΡΩΜΕΣ</a></li>-->
+<!--      <li><a routerLink="/stores" routerLinkActive="active">ΚΑΤΑΣΤΗΜΑΤΑ</a></li>-->
+    </ul>
+  </nav>
+
+  <!--  Show if user is logged in   -->
+<!--  <nz-avatar nzText="GD" nzSize="large" nz-dropdown nzTrigger="click" [nzDropdownMenu]="profileMenu" nzPlacement="bottomRight"></nz-avatar>-->
+<!--  <nz-dropdown-menu #profileMenu="nzDropdownMenu">-->
+<!--    <ul nz-menu>-->
+<!--      <li nz-menu-item>-->
+<!--        <button nz-button nzType="link" routerLink="/profile" class="profile-link"><span nz-icon nzType="user" nzTheme="outline"></span> ΠΡΟΦΙΛ</button>-->
+<!--      </li>-->
+<!--      <li nz-menu-item>-->
+<!--        <button nz-button nzType="text"><span nz-icon nzType="logout" nzTheme="outline"></span> ΑΠΟΣΥΝΔΕΣΗ</button>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nz-dropdown-menu>-->
+</div>
 
 <!-- Mobile Menu -->
 <div *ngIf="isOnMobile" class="mobile-menu-icon-container" (click)="openDrawer()">
@@ -24,11 +45,11 @@
         <li><a routerLink="/auth/signup" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΕΓΓΡΑΦΗ</a></li>
 
         <!--  Show if user is logged in   -->
-<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>-->
-<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΥΠΗΡΕΣΙΕΣ</a></li>-->
-<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΟΦΕΙΛΟΥΜΕΝΕΣ ΠΛΗΡΩΜΕΣ</a></li>-->
-<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΚΑΤΑΣΤΗΜΑΤΑ</a></li>-->
-<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΠΡΟΦΙΛ</a></li>-->
+<!--        <li><a routerLink="/dashboard" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>-->
+<!--        <li><a routerLink="/services" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΥΠΗΡΕΣΙΕΣ</a></li>-->
+<!--        <li><a routerLink="/payments" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΟΦΕΙΛΟΥΜΕΝΕΣ ΠΛΗΡΩΜΕΣ</a></li>-->
+<!--        <li><a routerLink="/stores" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΚΑΤΑΣΤΗΜΑΤΑ</a></li>-->
+<!--        <li><a routerLink="/profile" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΠΡΟΦΙΛ</a></li>-->
       </ul>
     </nav>
 

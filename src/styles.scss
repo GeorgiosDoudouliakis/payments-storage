@@ -23,6 +23,11 @@ li {
 }
 
 // OVERWRITE ANT STYLES
+[nz-button].profile-link,
+[nz-button].profile-link:hover {
+  color: #262626;
+}
+
 .ant-drawer-body {
   > .mobile-menu-avatar-container {
     display: flex;
