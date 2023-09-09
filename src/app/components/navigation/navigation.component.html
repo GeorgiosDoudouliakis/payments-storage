@@ -11,11 +11,29 @@
 </div>
 <nz-drawer [nzVisible]="isDrawerVisible" [nzClosable]="false" nzPlacement="left" [nzWidth]="250" (nzOnClose)="closeDrawer()">
   <ng-container *nzDrawerContent>
+    <!--  Show if user is logged in   -->
+<!--    <div class="mobile-menu-avatar-container">-->
+<!--      <nz-avatar nzText="GD" nzSize="large"></nz-avatar>-->
+<!--      <span>George Doudouliakis</span>-->
+<!--    </div>-->
+<!--    <nz-divider></nz-divider>-->
+
     <nav>
       <ul>
         <li><a routerLink="/auth/login" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΣΥΝΔΕΣΗ</a></li>
         <li><a routerLink="/auth/signup" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΕΓΓΡΑΦΗ</a></li>
+
+        <!--  Show if user is logged in   -->
+<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ</a></li>-->
+<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΥΠΗΡΕΣΙΕΣ</a></li>-->
+<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΟΦΕΙΛΟΥΜΕΝΕΣ ΠΛΗΡΩΜΕΣ</a></li>-->
+<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΚΑΤΑΣΤΗΜΑΤΑ</a></li>-->
+<!--        <li><a routerLink="" routerLinkActive="active" style="display: block; padding: 10px 0; color: #262626" (click)="closeDrawer()">ΠΡΟΦΙΛ</a></li>-->
       </ul>
     </nav>
+
+    <!--  Show if user is logged in   -->
+<!--    <nz-divider></nz-divider>-->
+<!--    <button nz-button nzType="text">ΑΠΟΣΥΝΔΕΣΗ <span nz-icon nzType="logout" nzTheme="outline"></span></button>-->
   </ng-container>
 </nz-drawer>

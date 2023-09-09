@@ -16,9 +16,9 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 import { IconDefinition } from "@ant-design/icons-angular";
-import { MenuOutline, EyeOutline, EyeInvisibleOutline } from "@ant-design/icons-angular/icons";
+import { MenuOutline, EyeOutline, EyeInvisibleOutline, LogoutOutline } from "@ant-design/icons-angular/icons";
 
-const icons: IconDefinition[] = [MenuOutline, EyeOutline, EyeInvisibleOutline];
+const icons: IconDefinition[] = [MenuOutline, EyeOutline, EyeInvisibleOutline, LogoutOutline];
 
 @NgModule({
   declarations: [

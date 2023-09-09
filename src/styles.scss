@@ -23,6 +23,33 @@ li {
 }
 
 // OVERWRITE ANT STYLES
+.ant-drawer-body {
+  > .mobile-menu-avatar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > nz-avatar {
+      margin-bottom: 12px;
+    }
+
+    > span {
+      font-size: 16px;
+    }
+  }
+  > nz-divider {
+    margin: 16px 0;
+  }
+  > [nz-button] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .provided-service-item-card {
   display: flex;
   flex-direction: column;

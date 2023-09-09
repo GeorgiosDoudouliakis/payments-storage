@@ -6,11 +6,14 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 /* Place your module imports here */
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzDrawerModule } from "ng-zorro-antd/drawer";
+import { NzAvatarModule } from "ng-zorro-antd/avatar";
+import { NzDividerModule } from "ng-zorro-antd/divider";
+import { NzButtonModule } from "ng-zorro-antd/button";
 
 @Component({
   selector: 'ps-navigation',
   standalone: true,
-  imports: [CommonModule, RouterLinkActive, RouterLink, NzIconModule, NzDrawerModule],
+  imports: [CommonModule, RouterLinkActive, RouterLink, NzIconModule, NzDrawerModule, NzAvatarModule, NzDividerModule, NzButtonModule],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
