@@ -9,12 +9,12 @@ import { SignupComponent } from "./layout/signup/signup.component";
 const routes: Routes = [
   {
     path: "login",
-    title: "Σύνδεση | Payments Storage",
+    title: "Σύνδεση | UPayments",
     component: LoginComponent
   },
   {
     path: "signup",
-    title: "Εγγραφή | Payments Storage",
+    title: "Εγγραφή | UPayments",
     component: SignupComponent
   },
   {
