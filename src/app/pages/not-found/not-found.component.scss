@@ -1,0 +1,17 @@
+:host {
+  text-align: center;
+  h2 {
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  [nz-button] {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 0;
+  }
+}
