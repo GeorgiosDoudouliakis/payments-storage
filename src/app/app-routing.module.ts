@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import("./pages/auth/auth.module").then(({ AuthModule }) => AuthModule)
   },
   {
+    path: "your-services",
+    loadChildren: () => import("./pages/your-services/your-services.module").then(({ YourServicesModule }) => YourServicesModule)
+  },
+  {
     path: "**",
     loadComponent: () => import("./pages/not-found/not-found.component").then(({ NotFoundComponent }) => NotFoundComponent)
   }
