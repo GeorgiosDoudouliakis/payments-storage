@@ -7,12 +7,13 @@ import { YourServicesRoutingModule } from "./your-services-routing.module";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
 
 /* Place your component imports here */
+import { PageHeaderComponent } from "../../components/page-header/page-header.component";
 import { AllServicesComponent } from './components/all-services/all-services.component';
 import { ServiceManagementComponent } from './components/service-management/service-management.component';
 import { YourServicesWrapperComponent } from './components/your-services-wrapper/your-services-wrapper.component';
 
 @NgModule({
-  imports: [CommonModule, YourServicesRoutingModule, NzTabsModule],
+  imports: [CommonModule, PageHeaderComponent, YourServicesRoutingModule, NzTabsModule],
   declarations: [
     AllServicesComponent,
     ServiceManagementComponent,
