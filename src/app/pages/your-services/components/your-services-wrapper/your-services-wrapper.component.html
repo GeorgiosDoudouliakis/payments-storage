@@ -1,0 +1,14 @@
+<nz-tabset nzLinkRouter nzTabPosition="left" class="your-services-tabs">
+  <nz-tab>
+    <a *nzTabLink nz-tab-link [routerLink]="['all-services']">
+      ΟΛΕΣ ΟΙ ΥΠΗΡΕΣΙΕΣ
+    </a>
+    <router-outlet></router-outlet>
+  </nz-tab>
+  <nz-tab>
+    <a *nzTabLink nz-tab-link [routerLink]="['service-management']">
+      ΔΙΑΧΕΙΡΙΣΗ ΥΠΗΡΕΣΙΩΝ
+    </a>
+    <router-outlet></router-outlet>
+  </nz-tab>
+</nz-tabset>
