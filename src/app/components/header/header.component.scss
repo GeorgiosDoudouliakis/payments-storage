@@ -11,5 +11,11 @@
     @media(min-width: 768px) {
       font-size: 24px;
     }
+    > a {
+      color: #262626;
+      > span {
+        color: #1890ff;
+      }
+    }
   }
 }
