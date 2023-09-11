@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './all-services.component.html',
   styleUrls: ['./all-services.component.scss']
 })
-export class AllServicesComponent {}
+export class AllServicesComponent {
+  public services: string[] = ['ΔΕΥ', 'COSMOTE', 'ΕΥΑΘ'];
+}

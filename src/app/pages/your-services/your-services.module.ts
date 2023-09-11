@@ -5,6 +5,10 @@ import { CommonModule } from "@angular/common";
 /* Place your module imports here */
 import { YourServicesRoutingModule } from "./your-services-routing.module";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzIconModule } from "ng-zorro-antd/icon";
+import { NzButtonModule } from "ng-zorro-antd/button";
+import { NzListModule } from 'ng-zorro-antd/list';
 
 /* Place your component imports here */
 import { PageHeaderComponent } from "../../components/page-header/page-header.component";
@@ -13,7 +17,16 @@ import { ServiceManagementComponent } from './components/service-management/serv
 import { YourServicesWrapperComponent } from './components/your-services-wrapper/your-services-wrapper.component';
 
 @NgModule({
-  imports: [CommonModule, PageHeaderComponent, YourServicesRoutingModule, NzTabsModule],
+  imports: [
+    CommonModule,
+    PageHeaderComponent,
+    YourServicesRoutingModule,
+    NzTabsModule,
+    NzInputModule,
+    NzButtonModule,
+    NzIconModule,
+    NzListModule
+  ],
   declarations: [
     AllServicesComponent,
     ServiceManagementComponent,

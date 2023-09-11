@@ -1,1 +1,21 @@
-<p>all-services works!</p>
+<nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+  <input type="text" nz-input placeholder="Ψάξε μια υπηρεσία" />
+</nz-input-group>
+<ng-template #suffixIconButton>
+  <button nz-button nzType="primary" nzSearch><span nz-icon nzType="search" nzTheme="outline"></span></button>
+</ng-template>
+
+<ul nz-list nzBordered>
+  <nz-list-header>Υπηρεσίες</nz-list-header>
+  <li nz-list-item *ngFor="let service of services" nzNoFlex>
+    <ul nz-list-item-actions>
+      <nz-list-item-action>
+        <a routerLink="">Πληροφορίες</a>
+      </nz-list-item-action>
+    </ul>
+    {{ service }}
+  </li>
+  <nz-list-footer>
+    <button nz-button nzType="primary">Φόρτωσε Περισσότερα</button>
+  </nz-list-footer>
+</ul>
