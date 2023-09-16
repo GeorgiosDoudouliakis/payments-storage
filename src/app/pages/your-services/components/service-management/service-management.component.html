@@ -1,7 +1,9 @@
 <div class="search-add-container">
   <input type="text" nz-input nzSearch placeholder="Ψάξε μια υπηρεσία"/>
-  <button nz-button nzType="primary" *ngIf="!isOnAddServiceMode" (click)="showAddServiceSection()">Προσθήκη Υπηρεσίας</button>
+  <button nz-button nzType="primary" [disabled]="isOnAddServiceMode" (click)="showAddServiceSection()">Προσθήκη Υπηρεσίας</button>
 </div>
+
+<nz-divider *ngIf="isOnAddServiceMode"></nz-divider>
 
 <div class="add-service-container" *ngIf="isOnAddServiceMode">
   <input type="text" nz-input placeholder="Υπηρεσία (π.χ. ΔΕΗ)"/>
@@ -10,6 +12,8 @@
     <button nz-button nzType="primary">Προσθήκη</button>
   </div>
 </div>
+
+<nz-divider *ngIf="isOnAddServiceMode"></nz-divider>
 
 <nz-table [nzData]="services" [nzShowPagination]="false">
   <thead>

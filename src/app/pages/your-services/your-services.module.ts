@@ -11,6 +11,7 @@ import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { NzDividerModule } from "ng-zorro-antd/divider";
 
 /* Place your component imports here */
 import { PageHeaderComponent } from "../../components/page-header/page-header.component";
@@ -29,7 +30,8 @@ import { YourServicesWrapperComponent } from './components/your-services-wrapper
     NzIconModule,
     NzListModule,
     NzTableModule,
-    NzPopconfirmModule
+    NzPopconfirmModule,
+    NzDividerModule
   ],
   declarations: [
     AllServicesComponent,
