@@ -1,1 +1,38 @@
-<p>service-management works!</p>
+<div class="search-add-container">
+  <nz-input-group nzSearch>
+    <input type="text" nz-input placeholder="Ψάξε μια υπηρεσία"/>
+  </nz-input-group>
+  <button nz-button nzType="primary" *ngIf="!isOnAddServiceMode" (click)="showAddServiceSection()">Προσθήκη Υπηρεσίας</button>
+</div>
+
+<div class="add-service-container" *ngIf="isOnAddServiceMode">
+  <nz-input-group>
+    <input type="text" nz-input placeholder="Υπηρεσία (π.χ. ΔΕΗ)"/>
+  </nz-input-group>
+  <div>
+    <button nz-button nzType="dashed" (click)="hideAddServiceSection()">Ακύρωση</button>
+    <button nz-button nzType="primary">Προσθήκη</button>
+  </div>
+</div>
+
+<nz-table [nzData]="services" [nzShowPagination]="false">
+  <thead>
+  <tr>
+    <th>Υπηρεσία</th>
+    <th aria-hidden="true"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let service of services">
+    <td>{{ service.name }}</td>
+    <td>
+      <button nz-button nzType="primary" nzDanger nz-popconfirm
+              nzOkText="Οκ" nzCancelText="Ακύρωση" [nzPopconfirmOverlayStyle]="{ 'width': '280px' }"
+              nzPopconfirmTitle="Είσαι σίγουρος οτι θέλεις να διαγράψεις αυτή την υπηρεσία;"
+              (nzOnConfirm)="confirmServiceDeletion()">Διαγραφή</button>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>
+
+<button nz-button nzType="primary" class="load-more-btn">Φόρτωσε Περισσότερα</button>

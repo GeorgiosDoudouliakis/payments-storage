@@ -9,6 +9,8 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzListModule } from 'ng-zorro-antd/list';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
 
 /* Place your component imports here */
 import { PageHeaderComponent } from "../../components/page-header/page-header.component";
@@ -25,7 +27,9 @@ import { YourServicesWrapperComponent } from './components/your-services-wrapper
     NzInputModule,
     NzButtonModule,
     NzIconModule,
-    NzListModule
+    NzListModule,
+    NzTableModule,
+    NzPopconfirmModule
   ],
   declarations: [
     AllServicesComponent,
