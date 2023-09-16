@@ -14,10 +14,12 @@ const routes: Routes = [
     children: [
       {
         path: "all-services",
+        title: "Όλες οι υπηρεσίες | UPayments",
         component: AllServicesComponent
       },
       {
         path: "service-management",
+        title: "Διαχείριση υπηρεσιών | UPayments",
         component: ServiceManagementComponent
       },
       {
