@@ -4,8 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 /* Place your component imports here */
 import { YourServicesWrapperComponent } from "./components/your-services-wrapper/your-services-wrapper.component";
-import { AllServicesComponent } from "./components/all-services/all-services.component";
-import { ServiceManagementComponent } from "./components/service-management/service-management.component";
 
 const routes: Routes = [
   {
@@ -15,12 +13,12 @@ const routes: Routes = [
       {
         path: "all-services",
         title: "Όλες οι υπηρεσίες | UPayments",
-        component: AllServicesComponent
+        loadChildren: () => import("./modules/all-services/all-services.module").then(({ AllServicesModule }) => AllServicesModule)
       },
       {
         path: "service-management",
         title: "Διαχείριση υπηρεσιών | UPayments",
-        component: ServiceManagementComponent
+        loadChildren: () => import("./modules/service-management/service-management.module").then(({ ServiceManagementModule }) => ServiceManagementModule)
       },
       {
         path: "",
@@ -33,7 +31,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  declarations: [],
+  exports: [RouterModule]
 })
 export class YourServicesRoutingModule {}
