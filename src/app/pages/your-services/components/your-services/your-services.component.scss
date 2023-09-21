@@ -2,6 +2,7 @@
   .search-add-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
     @media(min-width: 600px) {
       flex-direction: row;
       justify-content: space-between;
@@ -20,37 +21,10 @@
     }
   }
 
-  .search-add-container,
-  .add-service-container {
-    margin-bottom: 10px;
-    @media(min-width: 600px) {
-      margin-bottom: 15px;
-    }
-    @media(min-width: 1024px) {
-      margin-bottom: 20px;
-    }
-  }
-
-  .add-service-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    div {
-      display: inline-flex;
-      button {
-        margin-left: 10px;
-      }
-    }
-  }
-
   [nz-input] {
     @media(min-width: 600px) {
       width: 300px;
     }
-  }
-
-  nz-table {
-    margin-bottom: 25px;
   }
 
   th:first-of-type {
@@ -63,6 +37,10 @@
 
   td:last-of-type {
     text-align: right;
+  }
+
+  .load-more-col {
+    border-bottom: none;
   }
 
   .load-more-btn {

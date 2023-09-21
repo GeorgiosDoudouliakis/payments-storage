@@ -21,15 +21,6 @@ export class YourServicesComponent {
       name: 'ΕΥΑΘ'
     }
   ];
-  public isOnAddServiceMode: boolean = false;
-
-  public showAddServiceSection(): void {
-    this.isOnAddServiceMode = true;
-  }
-
-  public hideAddServiceSection(): void {
-    this.isOnAddServiceMode = false;
-  }
 
   public confirmServiceDeletion(): void {}
 }

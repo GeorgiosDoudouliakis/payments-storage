@@ -6,7 +6,6 @@ import { CommonModule } from "@angular/common";
 import { YourServicesRoutingModule } from "./your-services-routing.module";
 import { NzTableModule } from "ng-zorro-antd/table";
 import { NzPopconfirmModule } from "ng-zorro-antd/popconfirm";
-import { NzDividerModule } from "ng-zorro-antd/divider";
 import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzInputModule } from "ng-zorro-antd/input";
 
@@ -23,8 +22,7 @@ import { YourServicesComponent } from "./components/your-services/your-services.
     NzButtonModule,
     NzInputModule,
     NzTableModule,
-    NzPopconfirmModule,
-    NzDividerModule
+    NzPopconfirmModule
   ]
 })
 export class YourServicesModule {}
