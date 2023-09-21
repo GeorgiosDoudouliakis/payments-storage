@@ -1,2 +1,8 @@
-<input type="text" nz-input nzSearch placeholder="Ψάξε μια υπηρεσία"/>
-<button nz-button nzType="primary">Προσθήκη Υπηρεσίας</button>
+<nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+  <input type="text" nz-input placeholder="Ψάξε μια υπηρεσία" />
+</nz-input-group>
+<ng-template #suffixIconButton>
+  <button nz-button nzType="primary" nzSearch><span nz-icon nzType="search" nzTheme="outline"></span></button>
+</ng-template>
+
+<button nz-button nzType="primary">Προσθήκη Υπηρεσίας <span nz-icon nzType="plus" nzTheme="outline"></span></button>

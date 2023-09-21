@@ -8,6 +8,7 @@ import { NzTableModule } from "ng-zorro-antd/table";
 import { NzPopconfirmModule } from "ng-zorro-antd/popconfirm";
 import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzInputModule } from "ng-zorro-antd/input";
+import { NzIconModule } from "ng-zorro-antd/icon";
 
 /* Place your component imports here */
 import { PageHeaderComponent } from "../../components/page-header/page-header.component";
@@ -23,7 +24,8 @@ import { AddServiceComponent, ServicesTableComponent, ServiceTableItemComponent 
     NzButtonModule,
     NzInputModule,
     NzTableModule,
-    NzPopconfirmModule
+    NzPopconfirmModule,
+    NzIconModule
   ]
 })
 export class YourServicesModule {}
