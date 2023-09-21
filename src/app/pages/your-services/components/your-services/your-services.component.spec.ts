@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServiceManagementComponent } from './service-management.component';
+import { YourServicesComponent } from './your-services.component';
 
 describe('ServiceManagementComponent', () => {
-  let component: ServiceManagementComponent;
-  let fixture: ComponentFixture<ServiceManagementComponent>;
+  let component: YourServicesComponent;
+  let fixture: ComponentFixture<YourServicesComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ServiceManagementComponent]
+      declarations: [YourServicesComponent]
     });
-    fixture = TestBed.createComponent(ServiceManagementComponent);
+    fixture = TestBed.createComponent(YourServicesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
