@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  @media(min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  [nz-input] {
+    margin-bottom: 10px;
+    @media(min-width: 600px) {
+      width: 300px;
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    margin-left: 0 !important;
+  }
+}

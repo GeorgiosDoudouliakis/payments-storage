@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 /* Place your component imports here */
 import {
   YourServicesComponent
-} from "./components/your-services/your-services.component";
+} from "./layout/your-services.component";
 
 const routes: Routes = [
   {

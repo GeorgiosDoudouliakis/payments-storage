@@ -11,10 +11,11 @@ import { NzInputModule } from "ng-zorro-antd/input";
 
 /* Place your component imports here */
 import { PageHeaderComponent } from "../../components/page-header/page-header.component";
-import { YourServicesComponent } from "./components/your-services/your-services.component";
+import { YourServicesComponent } from "./layout/your-services.component";
+import { AddServiceComponent, ServicesTableComponent, ServiceTableItemComponent } from './components';
 
 @NgModule({
-  declarations: [YourServicesComponent],
+  declarations: [YourServicesComponent, AddServiceComponent, ServicesTableComponent, ServiceTableItemComponent],
   imports: [
     CommonModule,
     PageHeaderComponent,

@@ -1,0 +1,17 @@
+<nz-table [nzData]="yourServices" [nzShowPagination]="false">
+  <thead>
+  <tr>
+    <th>Υπηρεσίες</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let yourService of yourServices">
+    <ps-service-table-item [yourService]="yourService"></ps-service-table-item>
+  </tr>
+  <tr>
+    <td class="load-more-col">
+      <button nz-button class="load-more-btn">Φόρτωσε Περισσότερα</button>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>
