@@ -5,17 +5,40 @@
   padding: 16px;
   border-bottom: 1px solid #f0f0f0;
 
-  td:last-of-type {
+  .img-container,
+  .no-image-cyrcle {
+    width: 35px;
+    height: 35px;
+  }
+
+  td {
     display: flex;
-    flex-direction: column;
-    @media(min-width: 600px) {
-      flex-direction: row;
+
+    &:first-of-type {
+      align-items: center;
+      > .no-image-cyrcle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        border-radius: 4px;
+      }
+      > .service-name {
+        margin-left: 15px;
+      }
     }
 
-    button:not(:last-of-type) {
-      margin-bottom: 10px;
+    &:last-of-type {
+      flex-direction: column;
       @media(min-width: 600px) {
-        margin: 0 10px 0 0;
+        flex-direction: row;
+      }
+
+      button:not(:last-of-type) {
+        margin-bottom: 10px;
+        @media(min-width: 600px) {
+          margin: 0 10px 0 0;
+        }
       }
     }
   }

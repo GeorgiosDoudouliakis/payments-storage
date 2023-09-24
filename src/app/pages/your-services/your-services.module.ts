@@ -17,8 +17,18 @@ import { PageHeaderComponent } from "../../components/page-header/page-header.co
 import { YourServicesComponent } from "./layout/your-services.component";
 import { AddServiceComponent, ServicesTableComponent, ServiceTableItemComponent, AddServiceModalComponent } from './components';
 
+/* Place any other imports here */
+import { FirstTwoLettersPipe } from './pipes/first-two-letters/first-two-letters.pipe';
+
 @NgModule({
-  declarations: [YourServicesComponent, AddServiceComponent, ServicesTableComponent, ServiceTableItemComponent, AddServiceModalComponent],
+  declarations: [
+    YourServicesComponent,
+    AddServiceComponent,
+    ServicesTableComponent,
+    ServiceTableItemComponent,
+    AddServiceModalComponent,
+    FirstTwoLettersPipe
+  ],
   imports: [
     CommonModule,
     FormsModule,
