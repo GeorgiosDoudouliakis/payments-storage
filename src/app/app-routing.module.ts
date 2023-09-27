@@ -18,7 +18,7 @@ const routes: Routes = [
       {
         path: "",
         title: "Υπηρεσίες | UPayments",
-        loadComponent: () => import("./pages/your-services/layout/your-services.component").then(({ YourServicesComponent }) => YourServicesComponent)
+        loadComponent: () => import("./pages/your-services/layout/your-services/your-services.component").then(({ YourServicesComponent }) => YourServicesComponent)
       }
     ]
   },

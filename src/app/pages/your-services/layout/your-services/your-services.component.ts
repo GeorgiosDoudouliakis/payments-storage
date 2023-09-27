@@ -2,8 +2,8 @@
 import { Component } from '@angular/core';
 
 /* Place your component imports here */
-import { PageHeaderComponent } from "../../../components/page-header/page-header.component";
-import { AddServiceComponent, ServicesTableComponent } from "../components";
+import { PageHeaderComponent } from "../../../../components/page-header/page-header.component";
+import { AddServiceComponent, ServicesTableComponent } from "../../components";
 
 @Component({
   selector: 'ps-your-services',
