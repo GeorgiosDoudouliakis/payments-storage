@@ -14,8 +14,13 @@ const routes: Routes = [
   },
   {
     path: "your-services",
-    title: "Υπηρεσίες | UPayments",
-    loadComponent: () => import("./pages/your-services/layout/your-services.component").then(({ YourServicesComponent }) => YourServicesComponent)
+    children: [
+      {
+        path: "",
+        title: "Υπηρεσίες | UPayments",
+        loadComponent: () => import("./pages/your-services/layout/your-services.component").then(({ YourServicesComponent }) => YourServicesComponent)
+      }
+    ]
   },
   {
     path: "**",
