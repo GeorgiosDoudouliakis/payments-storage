@@ -1,6 +1,6 @@
 <td>
   <div *ngIf="yourService.imageUrl; else noImageTpl" class="img-container">
-    <img [src]="yourService.imageUrl" alt="Λογότυπο {{ yourService.name }}">
+    <img [ngSrc]="yourService.imageUrl" width="30" height="30" alt="Λογότυπο {{ yourService.name }}">
   </div>
   <ng-template #noImageTpl>
     <div class="no-image-cyrcle">
