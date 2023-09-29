@@ -10,7 +10,7 @@ import { NzButtonModule } from "ng-zorro-antd/button";
 import { ServiceTableItemComponent } from "../service-table-item/service-table-item.component";
 
 /* Place your interface imports here */
-import { YourServiceInterface } from "../../interfaces/your-service.interface";
+import { YourServiceInterface } from "../../interfaces";
 
 @Component({
   selector: 'ps-services-table',
@@ -24,17 +24,23 @@ export class ServicesTableComponent {
     {
       id: 1,
       name: 'ΔΕΥ',
-      imageUrl: ""
+      imageUrl: "",
+      onlinePaymentLink: "https://www.dei.gr/el/gia-to-spiti/ypostiriksi-epikoinonia/ilektroniki-pliromi-logariasmou/",
+      payments: []
     },
     {
       id: 2,
       name: 'COSMOTE',
-      imageUrl: ""
+      imageUrl: "",
+      onlinePaymentLink: "https://my.cosmote.gr/selfcare/jsp/pay_ebill.jsp",
+      payments: []
     },
     {
       id: 3,
       name: 'ΕΥΑΘ',
-      imageUrl: ""
+      imageUrl: "",
+      onlinePaymentLink: "https://www.eyath.gr/pliromes-ofeiles/",
+      payments: []
     }
   ];
 }

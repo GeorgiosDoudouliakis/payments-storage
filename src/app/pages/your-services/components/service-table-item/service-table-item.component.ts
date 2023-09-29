@@ -8,7 +8,7 @@ import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzPopconfirmModule } from "ng-zorro-antd/popconfirm";
 
 /* Place your interface imports here */
-import { YourServiceInterface } from "../../interfaces/your-service.interface";
+import { YourServiceInterface } from "../../interfaces";
 
 /* Place any other imports here */
 import { FirstTwoLettersPipe } from "../../pipes/first-two-letters/first-two-letters.pipe";
