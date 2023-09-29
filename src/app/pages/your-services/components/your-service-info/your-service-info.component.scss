@@ -1,0 +1,34 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+
+  .img-container {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 5px 2px #f3f3f3;
+  }
+
+  .service-info-actions {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: calc(95% - 130px);
+    > span {
+      &:not(:last-of-type) {
+        margin-bottom: 8px;
+      }
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+      > a {
+        text-decoration: underline;
+      }
+      > [nz-icon] {
+        display: inline-flex;
+        color: #262626;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
