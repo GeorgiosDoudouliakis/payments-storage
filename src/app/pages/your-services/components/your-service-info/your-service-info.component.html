@@ -3,12 +3,34 @@
   <img [ngSrc]="'/assets/images/no_image.jpg'" width="130" height="130" alt="">
 </div>
 <div class="service-info-actions">
-  <span>Οφειλούμενο Ποσό (&euro;): 82<span nz-icon nzType="edit" nzTheme="outline" nz-tooltip="Επεξεργασία ονόματος"></span></span>
-  <span>Τελευταία Πληρωμή: 22/09/2022</span>
-  <span>Σύνδεσμος Ηλεκρονικής Πληρωμής: <a href="https://www.dei.gr/el/gia-to-spiti/ypostiriksi-epikoinonia/ilektroniki-pliromi-logariasmou/" target="_blank" rel="noreferrer">https://www.dei.gr/el/gia-to-spiti/ypostiriksi-epikoinonia/ilektroniki-pliromi-logariasmou/</a><span nz-icon nzType="edit" nzTheme="outline" nz-tooltip="Επεξεργασία συνδέσμου ηλεκτρονικής πληρωμής"></span></span>
   <div>
-    <button nz-button nzType="primary">Μεταφόρτωση Απόδειξης Πληρωμής <span nz-icon nzType="upload" nzTheme="outline"></span></button>
-    <button nz-button nzType="default">Αλλαγή Φωτογραφίας <span nz-icon nzType="upload" nzTheme="outline"></span></button>
-    <button nz-button nzType="primary" nzDanger>Διαγραφή Υπηρεσίας <span nz-icon nzType="delete" nzTheme="outline"></span></button>
+    <h3>ΔΕΗ</h3>
+    <button nz-button nzType="dashed" nz-dropdown
+            [nzDropdownMenu]="actionsMenu" nzTrigger="click">
+      Ενέργειες
+      <span nz-icon nzType="down" nzTheme="outline"></span>
+    </button>
+    <nz-dropdown-menu #actionsMenu="nzDropdownMenu">
+      <ul nz-menu>
+        <li nz-menu-item>
+          <button nz-button nzType="text">Επεγεργασία ονόματος υπηρεσίας</button>
+        </li>
+        <li nz-menu-item>
+          <button nz-button nzType="text">Επεξεργασία συνδέσμου ηλεκτρονικής πληρωμής</button>
+        </li>
+        <li nz-menu-item>
+          <button nz-button nzType="text">Μεταφόρτωση φωτογραφίας υπηρεσίας</button>
+        </li>
+        <li nz-menu-item>
+          <button nz-button nzType="text">Μεταφόρτωση αποδεικτικού πληρωμής</button>
+        </li>
+        <li nz-menu-item>
+          <button nz-button nzType="text" nzDanger>Διαγραφή υπηρεσίας</button>
+        </li>
+      </ul>
+    </nz-dropdown-menu>
   </div>
+  <span>Συνολικό Οφειλούμενο Ποσό (&euro;): 82</span>
+  <span>Τελευταία Πληρωμή: 22/09/2022</span>
+  <span>Σύνδεσμος Ηλεκρονικής Πληρωμής: <a href="https://www.dei.gr/el/gia-to-spiti/ypostiriksi-epikoinonia/ilektroniki-pliromi-logariasmou/" target="_blank" rel="noreferrer">https://www.dei.gr/el/gia-to-spiti/ypostiriksi-epikoinonia/ilektroniki-pliromi-logariasmou/</a></span>
 </div>

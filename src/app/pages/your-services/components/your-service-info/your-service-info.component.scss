@@ -13,6 +13,15 @@
     display: flex;
     flex-direction: column;
     width: calc(95% - 130px);
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+    }
     > span {
       &:not(:last-of-type) {
         margin-bottom: 8px;
@@ -22,22 +31,6 @@
       }
       > a {
         text-decoration: underline;
-      }
-      > [nz-icon] {
-        display: inline-flex;
-        color: #262626;
-        margin-left: 15px;
-        cursor: pointer;
-      }
-    }
-    > div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px 20px;
-      > [nz-button] {
-        flex: 1 1 0;
       }
     }
   }
