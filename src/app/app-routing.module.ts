@@ -2,6 +2,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+/* Place your component imports here */
+import { YourServicesWrapperComponent } from "./pages/your-services/components";
+
 const routes: Routes = [
   {
     path: "",
@@ -14,6 +17,7 @@ const routes: Routes = [
   },
   {
     path: "your-services",
+    component: YourServicesWrapperComponent,
     children: [
       {
         path: "",
