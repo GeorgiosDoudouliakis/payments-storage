@@ -4,3 +4,5 @@ export { ServicesTableComponent } from "./services-table/services-table.componen
 export { ServiceTableItemComponent } from "./service-table-item/service-table-item.component";
 export { AddServiceModalComponent } from "./add-service-modal/add-service-modal.component";
 export { YourServiceInfoActionsComponent } from "./your-service-info-actions/your-service-info-actions.component";
+export { DuePaymentsComponent } from "./due-payments/due-payments.component";
+export { PaymentsComponent } from "./payments/payments.component";

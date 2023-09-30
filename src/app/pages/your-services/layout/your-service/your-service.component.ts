@@ -4,8 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from "@angular/router";
 
 /* Place your component imports here */
-import { PageHeaderComponent } from "../../../../components/page-header/page-header.component";
-import { YourServiceInfoActionsComponent } from "../../components";
+import { DuePaymentsComponent, PaymentsComponent, YourServiceInfoActionsComponent } from "../../components";
 
 /* Place your module imports here */
 import { NzButtonModule } from "ng-zorro-antd/button";
@@ -18,8 +17,9 @@ import { NzTabsModule } from "ng-zorro-antd/tabs";
   imports: [
     CommonModule,
     RouterLink,
-    PageHeaderComponent,
     YourServiceInfoActionsComponent,
+    DuePaymentsComponent,
+    PaymentsComponent,
     NzButtonModule,
     NzIconModule,
     NzTabsModule
