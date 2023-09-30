@@ -10,11 +10,20 @@ import { YourServiceInfoActionsComponent } from "../../components";
 /* Place your module imports here */
 import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzIconModule } from "ng-zorro-antd/icon";
+import { NzTabsModule } from "ng-zorro-antd/tabs";
 
 @Component({
   selector: 'ps-your-service',
   standalone: true,
-  imports: [CommonModule, RouterLink, PageHeaderComponent, YourServiceInfoActionsComponent, NzButtonModule, NzIconModule],
+  imports: [
+    CommonModule,
+    RouterLink,
+    PageHeaderComponent,
+    YourServiceInfoActionsComponent,
+    NzButtonModule,
+    NzIconModule,
+    NzTabsModule
+  ],
   templateUrl: './your-service.component.html',
   styleUrls: ['./your-service.component.scss']
 })
