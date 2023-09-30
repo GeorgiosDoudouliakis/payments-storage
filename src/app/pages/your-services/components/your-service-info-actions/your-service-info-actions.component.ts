@@ -8,7 +8,7 @@ import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzDropDownModule } from "ng-zorro-antd/dropdown";
 
 @Component({
-  selector: 'ps-your-service-info',
+  selector: 'ps-your-service-info-actions',
   standalone: true,
   imports: [
     CommonModule,
@@ -17,7 +17,7 @@ import { NzDropDownModule } from "ng-zorro-antd/dropdown";
     NzButtonModule,
     NzDropDownModule
   ],
-  templateUrl: './your-service-info.component.html',
-  styleUrls: ['./your-service-info.component.scss']
+  templateUrl: './your-service-info-actions.component.html',
+  styleUrls: ['./your-service-info-actions.component.scss']
 })
-export class YourServiceInfoComponent {}
+export class YourServiceInfoActionsComponent {}

@@ -4,12 +4,12 @@ import { CommonModule } from '@angular/common';
 
 /* Place your component imports here */
 import { PageHeaderComponent } from "../../../../components/page-header/page-header.component";
-import { YourServiceInfoComponent } from "../../components";
+import { YourServiceInfoActionsComponent } from "../../components";
 
 @Component({
   selector: 'ps-your-service',
   standalone: true,
-  imports: [CommonModule, PageHeaderComponent, YourServiceInfoComponent],
+  imports: [CommonModule, PageHeaderComponent, YourServiceInfoActionsComponent],
   templateUrl: './your-service.component.html',
   styleUrls: ['./your-service.component.scss']
 })
