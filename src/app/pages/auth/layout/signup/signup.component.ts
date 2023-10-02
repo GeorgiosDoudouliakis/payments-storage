@@ -2,13 +2,13 @@
 import { Component } from '@angular/core';
 
 /* Place any other imports here */
-import { AbstractAuthDirective } from "../../abstraction/directives/abstract-auth.directive";
+import { AbstractAuthDirective } from "../../abstraction/abstract-auth.directive";
 import { AuthPageTitle } from "../../types/auth-page-title.type";
 
 @Component({
   selector: 'ps-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['../../abstraction/scss/auth-page.scss']
+  styleUrls: ['../../abstraction/auth-page.directive.scss']
 })
 export class SignupComponent extends AbstractAuthDirective {
   public pageTitle: AuthPageTitle = "ΕΓΓΡΑΦΗ";

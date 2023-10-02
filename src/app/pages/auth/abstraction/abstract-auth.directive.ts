@@ -3,7 +3,7 @@ import { Directive } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 /* Place any other imports here */
-import { AuthPageTitle } from "../../types/auth-page-title.type";
+import { AuthPageTitle } from "../types/auth-page-title.type";
 
 @Directive()
 export abstract class AbstractAuthDirective {

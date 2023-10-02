@@ -8,13 +8,13 @@ import { ForgotPasswordComponent } from "../../components/forgot-password/forgot
 import { NzModalService } from "ng-zorro-antd/modal";
 
 /* Place any other imports here */
-import { AbstractAuthDirective } from "../../abstraction/directives/abstract-auth.directive";
+import { AbstractAuthDirective } from "../../abstraction/abstract-auth.directive";
 import { AuthPageTitle } from "../../types/auth-page-title.type";
 
 @Component({
   selector: 'ps-login',
   templateUrl: './login.component.html',
-  styleUrls: ['../../abstraction/scss/auth-page.scss']
+  styleUrls: ['../../abstraction/auth-page.directive.scss']
 })
 export class LoginComponent extends AbstractAuthDirective {
   public pageTitle: AuthPageTitle = "ΣΥΝΔΕΣΗ";
