@@ -29,7 +29,6 @@ import {
   PlusOutline,
   EditOutline,
   DownOutline,
-  ArrowLeftOutline,
   UploadOutline,
   CheckOutline
 } from "@ant-design/icons-angular/icons";
@@ -47,7 +46,6 @@ const icons: IconDefinition[] = [
   PlusOutline,
   EditOutline,
   DownOutline,
-  ArrowLeftOutline,
   UploadOutline,
   CheckOutline
 ];

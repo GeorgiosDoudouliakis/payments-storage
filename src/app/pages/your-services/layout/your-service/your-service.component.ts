@@ -8,7 +8,6 @@ import { PaymentsComponent, YourServiceInfoActionsComponent } from "../../compon
 
 /* Place your module imports here */
 import { NzButtonModule } from "ng-zorro-antd/button";
-import { NzIconModule } from "ng-zorro-antd/icon";
 
 @Component({
   selector: 'ps-your-service',
@@ -18,8 +17,7 @@ import { NzIconModule } from "ng-zorro-antd/icon";
     RouterLink,
     YourServiceInfoActionsComponent,
     PaymentsComponent,
-    NzButtonModule,
-    NzIconModule
+    NzButtonModule
   ],
   templateUrl: './your-service.component.html',
   styleUrls: ['./your-service.component.scss']
