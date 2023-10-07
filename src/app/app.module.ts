@@ -64,7 +64,6 @@ const icons: IconDefinition[] = [
     NzIconModule.forRoot(icons),
     NzBackTopModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

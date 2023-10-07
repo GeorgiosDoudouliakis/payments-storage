@@ -13,19 +13,19 @@
     <nz-dropdown-menu #actionsMenu="nzDropdownMenu">
       <ul nz-menu>
         <li nz-menu-item>
-          <button nz-button nzType="text">Επεγεργασία ονόματος υπηρεσίας</button>
+          <button nz-button nzType="text" class="service-action-btn">Επεγεργασία ονόματος υπηρεσίας</button>
         </li>
         <li nz-menu-item>
-          <button nz-button nzType="text">Επεξεργασία συνδέσμου ηλεκτρονικής πληρωμής</button>
+          <button nz-button nzType="text" class="service-action-btn">Επεξεργασία συνδέσμου ηλεκτρονικής πληρωμής</button>
         </li>
         <li nz-menu-item>
-          <button nz-button nzType="text">Μεταφόρτωση φωτογραφίας υπηρεσίας</button>
+          <button nz-button nzType="text" class="service-action-btn">Μεταφόρτωση φωτογραφίας υπηρεσίας</button>
         </li>
         <li nz-menu-item>
-          <button nz-button nzType="text">Μεταφόρτωση αποδεικτικού πληρωμής</button>
+          <button nz-button nzType="text" class="service-action-btn">Μεταφόρτωση αποδεικτικού πληρωμής</button>
         </li>
         <li nz-menu-item>
-          <button nz-button nzType="text" nzDanger>Διαγραφή υπηρεσίας</button>
+          <button nz-button nzType="text" nzDanger class="service-action-btn" (click)="onServiceDelete()">Διαγραφή υπηρεσίας</button>
         </li>
       </ul>
     </nz-dropdown-menu>

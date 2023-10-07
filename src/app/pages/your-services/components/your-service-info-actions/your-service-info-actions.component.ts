@@ -6,6 +6,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzDropDownModule } from "ng-zorro-antd/dropdown";
+import { NzModalRef, NzModalService } from "ng-zorro-antd/modal";
 
 @Component({
   selector: 'ps-your-service-info-actions',
@@ -18,6 +19,19 @@ import { NzDropDownModule } from "ng-zorro-antd/dropdown";
     NzDropDownModule
   ],
   templateUrl: './your-service-info-actions.component.html',
-  styleUrls: ['./your-service-info-actions.component.scss']
+  styleUrls: ['./your-service-info-actions.component.scss'],
+  providers: [NzModalService]
 })
-export class YourServiceInfoActionsComponent {}
+export class YourServiceInfoActionsComponent {
+  constructor(private _modalService: NzModalService) {}
+
+  public onServiceDelete(): void {
+    const deletionConfirmModal: NzModalRef = this._modalService.confirm({
+      nzTitle: "Είσαι σίγουρος οτι θέλεις να διαγράψεις την υπηρεσία;",
+      nzWidth: 400,
+      nzOkText: "Διαγραφή",
+      nzCancelText: "Ακύρωση",
+      nzOnCancel: () => deletionConfirmModal.destroy()
+    })
+  }
+}
