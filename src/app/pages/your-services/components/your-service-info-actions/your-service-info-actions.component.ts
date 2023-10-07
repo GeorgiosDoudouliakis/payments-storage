@@ -8,6 +8,9 @@ import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzDropDownModule } from "ng-zorro-antd/dropdown";
 import { NzModalRef, NzModalService } from "ng-zorro-antd/modal";
 
+/* Place your component imports here */
+import { EditServiceNameModalComponent } from "../edit-service-name-modal/edit-service-name-modal.component";
+
 @Component({
   selector: 'ps-your-service-info-actions',
   standalone: true,
@@ -24,6 +27,14 @@ import { NzModalRef, NzModalService } from "ng-zorro-antd/modal";
 })
 export class YourServiceInfoActionsComponent {
   constructor(private _modalService: NzModalService) {}
+
+  public onServiceNameEdit(): void {
+    this._modalService.create({
+      nzTitle: "Επεξεργασία ονόματος υπηρεσίας",
+      nzContent: EditServiceNameModalComponent,
+      nzWidth: 350
+    });
+  }
 
   public onServiceDelete(): void {
     const deletionConfirmModal: NzModalRef = this._modalService.confirm({
