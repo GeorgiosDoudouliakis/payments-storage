@@ -28,19 +28,5 @@
         margin-left: 15px;
       }
     }
-
-    &:last-of-type {
-      flex-direction: column;
-      @media(min-width: 600px) {
-        flex-direction: row;
-      }
-
-      button:not(:last-of-type) {
-        margin-bottom: 10px;
-        @media(min-width: 600px) {
-          margin: 0 10px 0 0;
-        }
-      }
-    }
   }
 }
