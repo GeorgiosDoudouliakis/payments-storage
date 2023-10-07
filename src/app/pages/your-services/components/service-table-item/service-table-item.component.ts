@@ -12,11 +12,12 @@ import { YourServiceInterface } from "../../interfaces";
 
 /* Place any other imports here */
 import { FirstTwoLettersPipe } from "../../pipes/first-two-letters/first-two-letters.pipe";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'ps-service-table-item',
   standalone: true,
-  imports: [NzButtonModule, NzIconModule, NzPopconfirmModule, FirstTwoLettersPipe, NgOptimizedImage, NgIf],
+  imports: [NzButtonModule, NzIconModule, NzPopconfirmModule, FirstTwoLettersPipe, NgOptimizedImage, NgIf, RouterLink],
   templateUrl: './service-table-item.component.html',
   styleUrls: ['./service-table-item.component.scss']
 })
