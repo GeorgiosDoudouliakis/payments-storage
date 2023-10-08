@@ -31,6 +31,8 @@ import {
 export class YourServiceInfoActionsComponent {
   constructor(private _modalService: NzModalService) {}
 
+  public onAddPayment(): void {}
+
   public onNameEdit(): void {
     this._modalService.create({
       nzTitle: "Επεξεργασία ονόματος",
