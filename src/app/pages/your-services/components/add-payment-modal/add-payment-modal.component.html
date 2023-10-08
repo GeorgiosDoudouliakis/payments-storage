@@ -1,0 +1,18 @@
+<form>
+  <div>
+    <span>Περίοδος λογαριασμού</span>
+    <nz-range-picker nzFormat="MM/dd/yyyy"></nz-range-picker>
+  </div>
+  <div>
+    <span>Προθεσμία πληρωμής</span>
+    <nz-date-picker nzFormat="MM/dd/yyyy"></nz-date-picker>
+  </div>
+  <div>
+    <span>Ποσό πληρωμής</span>
+    <nz-input-number [nzMin]="0" nzPlaceHolder="Ποσό πληρωμής"></nz-input-number>
+  </div>
+</form>
+<div *nzModalFooter>
+  <button nz-button nzType="default" (click)="onCancel()">Ακύρωση</button>
+  <button nz-button nzType="primary">Προσθήκη</button>
+</div>

@@ -52,6 +52,12 @@ const icons: IconDefinition[] = [
   ArrowLeftOutline
 ];
 
+// Date picker locale
+import { registerLocaleData } from '@angular/common';
+import { NZ_I18N, el_GR } from 'ng-zorro-antd/i18n';
+import el from '@angular/common/locales/el';
+registerLocaleData(el);
+
 @NgModule({
   declarations: [
     AppComponent
@@ -66,6 +72,10 @@ const icons: IconDefinition[] = [
     NzIconModule.forRoot(icons),
     NzBackTopModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [{
+    provide: NZ_I18N,
+    useValue: el_GR
+  }]
 })
 export class AppModule { }

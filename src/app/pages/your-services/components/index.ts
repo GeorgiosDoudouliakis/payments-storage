@@ -7,3 +7,4 @@ export { YourServiceInfoActionsComponent } from "./your-service-info-actions/you
 export { PaymentsComponent } from "./payments/payments.component";
 export { EditServiceNameModalComponent } from "./edit-service-name-modal/edit-service-name-modal.component";
 export { EditServiceOnlinePaymentLinkModalComponent } from "./edit-service-online-payment-link-modal/edit-service-online-payment-link-modal.component";
+export { AddPaymentModalComponent } from "./add-payment-modal/add-payment-modal.component";

@@ -9,10 +9,7 @@ import { NzDropDownModule } from "ng-zorro-antd/dropdown";
 import { NzModalRef, NzModalService } from "ng-zorro-antd/modal";
 
 /* Place your component imports here */
-import { EditServiceNameModalComponent } from "../edit-service-name-modal/edit-service-name-modal.component";
-import {
-  EditServiceOnlinePaymentLinkModalComponent
-} from "../edit-service-online-payment-link-modal/edit-service-online-payment-link-modal.component";
+import { EditServiceNameModalComponent, EditServiceOnlinePaymentLinkModalComponent, AddPaymentModalComponent } from "../../components";
 
 @Component({
   selector: 'ps-your-service-info-actions',
@@ -31,7 +28,13 @@ import {
 export class YourServiceInfoActionsComponent {
   constructor(private _modalService: NzModalService) {}
 
-  public onAddPayment(): void {}
+  public onAddPayment(): void {
+    this._modalService.create({
+      nzTitle: "Προσθήκη λογαριασμού",
+      nzContent: AddPaymentModalComponent,
+      nzWidth: 350
+    });
+  }
 
   public onNameEdit(): void {
     this._modalService.create({
