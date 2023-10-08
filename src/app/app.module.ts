@@ -30,7 +30,8 @@ import {
   EditOutline,
   DownOutline,
   UploadOutline,
-  CheckOutline
+  CheckOutline,
+  ArrowLeftOutline
 } from "@ant-design/icons-angular/icons";
 
 const icons: IconDefinition[] = [
@@ -47,7 +48,8 @@ const icons: IconDefinition[] = [
   EditOutline,
   DownOutline,
   UploadOutline,
-  CheckOutline
+  CheckOutline,
+  ArrowLeftOutline
 ];
 
 @NgModule({
