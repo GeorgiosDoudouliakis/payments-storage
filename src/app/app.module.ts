@@ -58,6 +58,12 @@ import { NZ_I18N, el_GR } from 'ng-zorro-antd/i18n';
 import el from '@angular/common/locales/el';
 registerLocaleData(el);
 
+// Angular Firebase
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -70,7 +76,10 @@ registerLocaleData(el);
     HeaderComponent,
     FooterComponent,
     NzIconModule.forRoot(icons),
-    NzBackTopModule
+    NzBackTopModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore())
   ],
   bootstrap: [AppComponent],
   providers: [{

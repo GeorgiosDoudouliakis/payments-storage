@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "upayments-26b94": {
+      "hosting": {
+        "payments-storage": [
+          "upayments-26b94"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "upayments-26b94"
+  }
+}
