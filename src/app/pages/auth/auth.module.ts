@@ -17,6 +17,9 @@ import { NzInputModule } from "ng-zorro-antd/input";
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzModalModule, NzModalService } from "ng-zorro-antd/modal";
 
+/* Place your service imports here */
+import { AuthService } from "./services";
+
 @NgModule({
   imports: [
     CommonModule,
@@ -31,6 +34,6 @@ import { NzModalModule, NzModalService } from "ng-zorro-antd/modal";
     NzModalModule
   ],
   declarations: [LoginComponent, SignupComponent, AuthPageWrapperComponent, ForgotPasswordComponent],
-  providers: [NzModalService]
+  providers: [AuthService, NzModalService]
 })
 export class AuthModule {}
